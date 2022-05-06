@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Distance entre deux villes</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -12,6 +12,7 @@
 
 
 <%@include file="navbar.jsp"%>
+ <%@include file="css.jsp"%>
 
 <style>
 .dropdown-content {
@@ -27,7 +28,8 @@
 
 <body>
 
-
+<div align = center>
+<h1>Calculer la distance entre deux villes</h1>
 	<c:if test="${ville1 == null && ville2== null}">
 
 		<form id="distance"  method="post">
@@ -51,8 +53,8 @@
 				</select>
 			</div>
 
-			<div class="">
-				<input   class="button" value="Calculate Distance" id="distance"
+			<div class="distance">
+				<input  class="button" value="Calculate Distance" id="distance"
 					type="submit" />
 			</div>
 
@@ -66,6 +68,8 @@
 
 
 	</c:if>
+	
+</div>
 
 	<script type="text/javascript">
 

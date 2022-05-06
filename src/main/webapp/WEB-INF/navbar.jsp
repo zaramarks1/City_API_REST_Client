@@ -13,30 +13,32 @@
 
 <style>
     .navbar-top {
-    background-color: #333;
+    background-color: #067373;
+    width: 100%;
     overflow: hidden;
+
     }
 
 /* Style the links inside the navigation bar */
 .navbar-top a {
     float: left;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 30px 16px;
     text-decoration: none;
     font-size: 17px;
     }
 
     /* Change the color of links on hover */
     .navbar-top a:hover {
-    background-color: #ddd;
+    background-color: #bffcfc;
     color: black;
     }
 
     /* Add a color to the active/current link */
     .navbar-top a.active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #bffcfc;
+    color: black;
     }
 </style>
 

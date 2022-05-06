@@ -10,6 +10,7 @@
 	crossorigin="anonymous">
 
 <%@include file="navbar.jsp"%>
+ <%@include file="css.jsp"%>
 
 </head>
 
@@ -17,7 +18,9 @@
 <body>
 
 	<c:if test="${villeId != null}">
+<div align=center>
 
+<h1>Modifier la ville :</h1>
 		<form id="formModifier" method="post">
 
 			<div class="field">
@@ -84,7 +87,7 @@
 				<input class="button" value="Cancel" id="modify" type="button" />
 			</div>
 		</form>
-
+</div>
 	</c:if>
 	<script type="text/javascript">
 	
@@ -144,6 +147,7 @@
 					return response.json()
 					 .then(function(data){
 						console.log(data)
+						 alert("La ville a été bien modifié");
 				})
 					  
 				})

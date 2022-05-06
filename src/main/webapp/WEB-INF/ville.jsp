@@ -10,6 +10,7 @@
 	crossorigin="anonymous">
 	
 	    <%@include file="navbar.jsp"%>
+	    <%@include file="css.jsp"%>
 </head>
 
 
@@ -18,73 +19,74 @@
 
 <c:if test="${villeId == null}">
  
+<div align=center>
 
-	<form id = "formAdd"  method="post" >
+<h1>Ajouter une ville</h1>
+	<form id = "formAdd"  method="post"  >
 
 		<div class="field">
-			<label class="label">Nom</label>
+			<label class="form-label" >Nom</label>
 			<div class="enterValue">
-				<input type="text" name="nomCommune" id="nomCommune" class="input"
+				<input type="text" name="nomCommune" id="nomCommune" class="form-text"
 					placeholder="Nom de la ville" required> 
 					
 			</div>
 		</div>
 		<div class="field">
-			<label class="label">Code de la commune</label>
+			<label class="form-label">Code de la commune</label>
 			<div class="enterValue">
-				<input type="text" name="codeCommuneINSEE" id="codeCommuneINSEE" class="input"
+				<input type="text" name="codeCommuneINSEE" id="codeCommuneINSEE" class="form-text"
 					placeholder="Code commune de la ville" required> 
 				
 			</div>
 		</div>
 		<div class="field">
-			<label class="label">Code postal</label>
+			<label class="form-label">Code postal</label>
 			<div class="enterValue">
-				<input type="text" class="input" name="codePostal" id="codePostal"
+				<input type="text" class="form-text" name="codePostal" id="codePostal"
 					placeholder="Code postal de la ville"> 
 			</div>	
 		</div>
 		<div class="field">
-			<label class="label">Libéllé acheminnement</label>
+			<label class="form-label">Libéllé acheminnement</label>
 			<div class="enterValue">
-				<input type="text" name="libelle" id="libelle" class="input"
+				<input type="text" name="libelle" id="libelle" class="form-text"
 					placeholder="Libéllé acheminnement de la ville"> 
 			</div>
 		</div>
 		<div class="field">
-			<label class="label">Ligne 5</label>
+			<label class="form-label">Ligne 5</label>
 			<div class="enterValue">
-				<input type="text" name="ligne5" id="ligne5" class="input"
+				<input type="text" name="ligne5" id="ligne5" class="form-text"
 					placeholder="Ligne 5 de la ville"> 
 				
 			</div>
 		</div>
 		<div class="field">
-			<label class="label">Longitude</label>
+			<label class="form-label"">Longitude</label>
 			<div class="enterValue">
-				<input type="text" name="longitude" id="longitude" class="input"
+				<input type="text" name="longitude" id="longitude" class="form-text"
 					placeholder="Longitude de la ville"> 
 			</div>
 		</div>
 
 		<div class="field">
-			<label class="label">Latitude</label>
+			<label class="form-label">Latitude</label>
 			<div class="enterValue">
-				<input type="text" name="latitude" id="latitude" class="input"
+				<input class="form-text" type="text" name="latitude" id="latitude" 
 					placeholder="Latitude de la ville"> 
 			</div>
 		</div>
 		<br>
 		<div class="">
-			<input class="button"
+			<input  class="button" 
 				value="Ajouter la ville " type="submit" />
-		</div>
-		
-		<div class="">
 			<input class="button"
 				value="Cancel" id= "modify" type="button" />
 		</div>
 	</form>
+	
+</div>
 </c:if>
 
 
